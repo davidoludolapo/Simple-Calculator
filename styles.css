@@ -10,7 +10,6 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    font-family: monospace;
 }
 
 .calculator {
@@ -28,6 +27,7 @@ body {
     border:none;
     box-sizing: border-box;
     font-size: 32px;
+    font-family: monospace;
     color: rgb(46, 44, 44);
     text-align: right;
     border-top-left-radius: 7px;
@@ -38,4 +38,43 @@ body {
     display: flex;
     justify-content: space-between;
     padding: 15px auto;
+}
+
+button {
+    width: 50px;
+    height: 50px;
+    border-radius: 5px;
+    border-radius: 5px;
+    color: white;
+    background-color: #22252d;
+    border:none;
+    margin: 10px auto;
+    cursor: pointer;
+}
+
+button [value="DEL"] {
+    color: #26fbd5;
+}
+button [value="+/-"] {
+    color: #26fbd5;
+}
+button [value="%"] {
+    color: #26fbd5;
+}
+button [value="/"] {
+    color: #26fbd5;
+}
+
+button:hover{
+    background-color: transparent;
+    color: rgb(71, 89, 255);
+}
+
+button[value="="]:hover {
+    background-color: yellow;
+    color: #333;
+}
+button[value="relo"]:hover {
+    background-color: red;
+    color: #333;
 }
