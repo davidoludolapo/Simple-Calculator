@@ -52,16 +52,25 @@ button {
     cursor: pointer;
 }
 
-button [value="DEL"] {
+button[value="DEL"] {
     color: #26fbd5;
 }
-button [value="+/-"] {
+button[value="^"] {
     color: #26fbd5;
 }
-button [value="%"] {
+button[value="%"] {
     color: #26fbd5;
 }
-button [value="/"] {
+button[value="/"] {
+    color: #26fbd5;
+}
+button[value="X"] {
+    color: greenyellow;
+}
+button[value="-"] {
+    color: red;
+}
+button[value="+"] {
     color: #26fbd5;
 }
 
@@ -76,5 +85,5 @@ button[value="="]:hover {
 }
 button[value="relo"]:hover {
     background-color: red;
-    color: #333;
+    color: rgb(255, 255, 255);
 }
